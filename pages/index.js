@@ -16,13 +16,13 @@ export default function Home({
     htmlContent
 }) {
     return (
-<div>
-    <Head>
-        <title>API Gabut</title>
-        <meta name="description" content="A collection of APIs created during idle time." />
-        <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <div dangerouslySetInnerHTML="{{" __html: htmlContent }} />
-</div>
+        <div>
+            <Head>
+                <title>API Gabut</title>
+                <meta name="description" content="A collection of APIs created during idle time." />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+        </div>
     );
 }
