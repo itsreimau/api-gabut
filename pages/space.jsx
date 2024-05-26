@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import spacePic from "../public/space.jpg";
 
 export default function LocalImage() {
