@@ -15,7 +15,10 @@ export default async function handler(req, res) {
         const json = {
             status: true,
             creator: creator,
-            result: data
+            result: {
+                region: query.toLowerCase().replace(/\b(\w)/g, (s) => s.toUpperCase()),
+                schedule: data
+            }
         };
 
         res.status(200).json(json);
