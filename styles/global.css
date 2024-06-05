@@ -1,14 +1,14 @@
 body {
-    background-color: #121212;
+    background-color: #000000;
     color: #ffffff;
-    font-family: "Arial", sans-serif;
+    font-family: "Bodoni Moda", serif;
     margin: 0;
     padding: 0;
 }
 
 a {
     text-decoration: none;
-    color: #ff6ec7;
+    color: #ffffff;
 }
 
 .container {
@@ -26,13 +26,13 @@ a {
 
 .title {
     font-size: 3rem;
-    color: #ff6ec7;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 .description {
     font-size: 1.5rem;
-    color: #9aff6e;
+    color: #cccccc;
     margin-bottom: 40px;
 }
 
@@ -42,8 +42,8 @@ a {
 }
 
 .card {
-    background-color: #2b2b2b;
-    border: 2px solid #ff6ec7;
+    background-color: #1a1a1a;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
@@ -56,13 +56,13 @@ a {
 
 .card h2 {
     font-size: 1.5rem;
-    color: #9aff6e;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 1rem;
-    color: #ffffff;
+    color: #cccccc;
 }
 
 section {
@@ -71,19 +71,19 @@ section {
 
 section h2 {
     font-size: 2rem;
-    color: #ff6ec7;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 section p,
 section ul {
     font-size: 1rem;
-    color: #ffffff;
+    color: #cccccc;
 }
 
 section code {
-    background-color: #2b2b2b;
-    color: #9aff6e;
+    background-color: #1a1a1a;
+    color: #ffffff;
     padding: 2px 4px;
     border-radius: 5px;
 }
@@ -91,9 +91,9 @@ section code {
 .footer {
     margin-top: 40px;
     text-align: center;
-    color: #9aff6e;
+    color: #cccccc;
 }
 
 .footer a {
-    color: #ff6ec7;
+    color: #ffffff;
 }
