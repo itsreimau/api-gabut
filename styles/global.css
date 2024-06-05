@@ -1,54 +1,49 @@
-html,
 body {
-    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: "Arial", sans-serif;
     margin: 0;
-    font-family: Arial Black, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
+    padding: 0;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
-}
-
-* {
-    box-sizing: border-box;
+    color: #ff6ec7;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
-}
-
-.main {
     padding: 20px;
 }
 
+.main {
+    text-align: center;
+}
+
 .title {
-    font-size: 4rem;
+    font-size: 3rem;
+    color: #ff6ec7;
     margin-bottom: 20px;
-    color: #ff0000;
 }
 
 .description {
     font-size: 1.5rem;
+    color: #9aff6e;
     margin-bottom: 40px;
 }
 
 .grid {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
 }
 
 .card {
-    background-color: #333;
-    border: 2px solid #ff0000;
+    background-color: #2b2b2b;
+    border: 2px solid #ff6ec7;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
@@ -60,44 +55,45 @@ a {
 }
 
 .card h2 {
-    margin: 0;
     font-size: 1.5rem;
-    color: #ff0000;
+    color: #9aff6e;
+    margin-bottom: 10px;
 }
 
 .card p {
-    margin: 10px 0 0;
     font-size: 1rem;
-    color: #ccc;
+    color: #ffffff;
 }
 
-#jadwalsholat {
-    background-color: #222;
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    width: 80%;
-    max-width: 600px;
-}
-
-footer {
-    padding: 10px 0;
-    border-top: 2px solid #ff0000;
+section {
     margin-top: 40px;
-    width: 100%;
 }
 
-footer p {
-    margin: 0;
+section h2 {
+    font-size: 2rem;
+    color: #ff6ec7;
+    margin-bottom: 20px;
+}
+
+section p,
+section ul {
     font-size: 1rem;
+    color: #ffffff;
 }
 
-footer a {
-    color: #ff0000;
-    text-decoration: none;
+section code {
+    background-color: #2b2b2b;
+    color: #9aff6e;
+    padding: 2px 4px;
+    border-radius: 5px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #9aff6e;
+}
+
+.footer a {
+    color: #ff6ec7;
 }
