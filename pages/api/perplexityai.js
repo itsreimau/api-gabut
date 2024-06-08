@@ -1,25 +1,20 @@
-import {
-    jadwalsholat
-} from "@bochilteam/scraper";
+import PerplexityAI from "perplexityai";
 
 const creator = "@itsreimau";
 
 export default async function handler(req, res) {
     try {
-        const query = req.query.query;
-        if (!query) {
-            throw new Error("Parameter 'query' is required");
+        const query = req.query.prompt;
+        if (!prompt) {
+            throw new Error("Parameter 'prompt' is required");
         }
 
-        const data = await jadwalsholat(query);
+        const response = await PerplexityAI.search(prompt);
 
         const json = {
             status: true,
             creator: creator,
-            result: {
-                region: query.toLowerCase().replace(/\b(\w)/g, (s) => s.toUpperCase()),
-                schedule: data
-            }
+            result: response
         };
         res.status(200).json(json);
     } catch (error) {
