@@ -5,11 +5,11 @@ const creator = "@itsreimau";
 export default async function handler(req, res) {
     try {
         const query = req.query.prompt;
-        if (!prompt) {
-            throw new Error("Parameter 'prompt' is required");
+        if (!query) {
+            throw new Error("Parameter 'query' is required");
         }
 
-        const response = await PerplexityAI.search(prompt);
+        const response = await PerplexityAI.search(query);
 
         const json = {
             status: true,
