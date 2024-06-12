@@ -13,12 +13,17 @@ export default async function handler(req, res) {
 
         const data = await jadwalsholat(query);
 
+        const todaySchedule = {};
+        for (const [key, value] of Object.entries(data.result.today)) {
+            todaySchedule[key.toLowerCase()] = value;
+        }
+
         const json = {
             status: true,
             creator: creator,
             result: {
                 region: query.toLowerCase().replace(/\b(\w)/g, (s) => s.toUpperCase()),
-                schedule: data
+                schedule: todaySchedule
             }
         };
         res.status(200).json(json);
