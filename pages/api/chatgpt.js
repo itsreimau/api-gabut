@@ -1,7 +1,7 @@
 import {
     createAPIUrl
 } from "../../tools/api.js";
-import axios from 'axios';
+import fetch from "node-fetch";
 
 const creator = "@itsreimau";
 
@@ -57,10 +57,10 @@ async function getChatGPTResponse(query, API = null) {
 
     for (const apiUrl of Object.values(apiUrls)) {
         try {
-            const response = await axios.get(apiUrl);
+            const response = await fetch(apiUrl);
 
             if (response.status === 200) {
-                const data = response.data;
+                const data = response.json;
 
                 if (data.content) {
                     return data.content;
