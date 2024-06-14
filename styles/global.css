@@ -46,6 +46,7 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 350px;
+    text-align: center;
 }
 
 .card-title {
@@ -59,9 +60,9 @@ body {
 }
 
 .try-api-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
     margin-top: 20px;
     border: none;
     border-radius: 5px;

@@ -1,4 +1,10 @@
 export const APIs = {
+    akhiro: {
+        baseURL: "https://akhiro-rest-api.onrender.com"
+    },
+    ngodingaja: {
+        baseURL: "https://api.ngodingaja.my.id"
+    },
     nyxs: {
         baseURL: "https://api.nyxs.pw"
     },
