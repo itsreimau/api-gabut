@@ -1,59 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
-.main {
+.header,
+.footer {
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .title {
-    font-size: 2.5rem;
-    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .description {
     font-size: 1.2rem;
-    margin: 20px 0;
+    font-weight: 400;
+    color: #666;
+}
+
+.main {
+    padding: 20px 0;
 }
 
 .grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    margin-bottom: 40px;
 }
 
 .card {
-    background: #f0f0f0;
+    background: #fff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    max-width: 300px;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.footer {
-    text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid #eaeaea;
+.api-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.api-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.api-table th,
+.api-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.api-table th {
+    background-color: #f2f2f2;
+    font-weight: 500;
 }
 
 .footer a {
     color: #0070f3;
     text-decoration: none;
+    font-weight: 500;
 }

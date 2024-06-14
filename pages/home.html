@@ -4,31 +4,41 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>API Gabut</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/styles/global.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
-            <main class="main">
-                <h1 class="title">Welcome to API Gabut!</h1>
-                <p class="description">A collection of APIs created during idle time.</p>
-                <div class="grid">
-                    <a href="#lorem" class="card">
-                        <h2>Lorem Ipsum - API &rarr;</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <header>
+                <h1>Welcome to API Gabut!</h1>
+                <p>A collection of APIs created during idle time.</p>
+            </header>
+            <main>
+                <div class="card">
+                    <a href="#playmusic">
+                        <h2>Play (Music) - API &rarr;</h2>
+                        <p>Play music from available sources.</p>
                     </a>
                 </div>
-                <section id="lorem">
-                    <h2>Lorem Ipsum - API</h2>
-                    <p><code>GET api/lorem?ipsum=&lt;ipsum&gt;</code></p>
-                    <p>Parameters:</p>
-                    <ul>
-                        <li><code>ipsum</code> (required): Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    </ul>
+                <section id="playmusic">
+                    <h2>Play (Music) - API</h2>
+                    <p><code>GET api/playmusic?source=&lt;spotify&gt;&query=&lt;one last kiss&gt;</code></p>
+                    <div class="api-parameters">
+                        <div class="parameter">
+                            <span><code>source</code></span>
+                            <span>string</span>
+                            <span>Required</span>
+                        </div>
+                        <div class="parameter">
+                            <span><code>query</code></span>
+                            <span>string</span>
+                            <span>Required</span>
+                        </div>
+                    </div>
                 </section>
             </main>
-            <footer class="footer">
-                <p>Copyright &copy; 2024 <a href="https://itsreimau.is-a.dev/">ItsReimau</a>. All Rights Reserved.</p>
+            <footer>
+                <p>&copy; 2024 <a href="https://itsreimau.is-a.dev/">ItsReimau</a>. All Rights Reserved.</p>
             </footer>
         </div>
     </body>
