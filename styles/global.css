@@ -2,90 +2,107 @@ body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #eef2f3;
+    color: #2c3e50;
 }
 
-.container {
-    max-width: 800px;
+.wrapper {
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.header,
+.header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.content {
+    padding: 20px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 350px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.api-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.api-params {
+    margin-top: 20px;
+}
+
+.param {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.param-name {
+    font-weight: 500;
+}
+
+.param-type,
+.param-req {
+    font-weight: 400;
+}
+
 .footer {
     text-align: center;
     padding: 20px 0;
 }
 
-.title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.description {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #666;
-}
-
-.main {
-    padding: 20px 0;
-}
-
-.grid {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s, box-shadow 0.2s;
-    width: 100%;
-    max-width: 300px;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.api-section {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.api-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.api-table th,
-.api-table td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-.api-table th {
-    background-color: #f2f2f2;
-    font-weight: 500;
-}
-
 .footer a {
-    color: #0070f3;
+    color: #3498db;
     text-decoration: none;
     font-weight: 500;
 }

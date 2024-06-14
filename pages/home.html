@@ -4,40 +4,42 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>API Gabut</title>
-        <link rel="stylesheet" href="styles.css" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div class="container">
-            <header>
-                <h1>Welcome to API Gabut!</h1>
-                <p>A collection of APIs created during idle time.</p>
+        <div class="wrapper">
+            <header class="header">
+                <h1 class="title">Welcome to API Gabut!</h1>
+                <p class="description">A collection of APIs created during idle time.</p>
             </header>
-            <main>
-                <div class="card">
-                    <a href="#playmusic">
-                        <h2>Play (Music) - API &rarr;</h2>
-                        <p>Play music from available sources.</p>
+            <main class="content">
+                <div class="card-container">
+                    <a href="#playmusic" class="card-link">
+                        <div class="card">
+                            <h2 class="card-title">Play (Music) - API &rarr;</h2>
+                            <p class="card-description">Play music from available sources.</p>
+                        </div>
                     </a>
                 </div>
-                <section id="playmusic">
+                <section id="playmusic" class="api-section">
                     <h2>Play (Music) - API</h2>
                     <p><code>GET api/playmusic?source=&lt;spotify&gt;&query=&lt;one last kiss&gt;</code></p>
-                    <div class="api-parameters">
-                        <div class="parameter">
-                            <span><code>source</code></span>
-                            <span>string</span>
-                            <span>Required</span>
+                    <div class="api-params">
+                        <div class="param">
+                            <span class="param-name"><code>source</code></span>
+                            <span class="param-type">string</span>
+                            <span class="param-req">Required</span>
                         </div>
-                        <div class="parameter">
-                            <span><code>query</code></span>
-                            <span>string</span>
-                            <span>Required</span>
+                        <div class="param">
+                            <span class="param-name"><code>query</code></span>
+                            <span class="param-type">string</span>
+                            <span class="param-req">Required</span>
                         </div>
                     </div>
                 </section>
             </main>
-            <footer>
+            <footer class="footer">
                 <p>&copy; 2024 <a href="https://itsreimau.is-a.dev/">ItsReimau</a>. All Rights Reserved.</p>
             </footer>
         </div>

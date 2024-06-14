@@ -24,7 +24,7 @@ export default async function handler(req, res) {
             const spotifyData = await spotifyResponse.json();
             const music = spotifyData[0];
 
-            const downloadApiUrl = createAPIUrl("nyxs", "/down", {
+            const downloadApiUrl = createAPIUrl("sandipbaruwal", "/down", {
                 url: music.url
             });
             const downloadResponse = await fetch(downloadApiUrl);
@@ -67,7 +67,10 @@ export default async function handler(req, res) {
         const json = {
             status: false,
             creator: creator,
-            error: error.message
+            error: error.message,
+            available: {
+                source: ["spotify", "youtube"]
+            }
         };
         res.status(400).json(json);
     }
