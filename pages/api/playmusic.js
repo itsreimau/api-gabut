@@ -1,6 +1,6 @@
 import {
     createAPIUrl
-} from "../tools/api.js";
+} from "../../tools/api.js";
 import fetch from "node-fetch";
 import yts from "yt-search";
 
