@@ -15,16 +15,15 @@
             </header>
             <main class="content">
                 <div class="card-container">
-                    <a href="#playmusic" class="card-link">
-                        <div class="card">
-                            <h2 class="card-title">Play (Music) - API &rarr;</h2>
-                            <p class="card-description">Play music from available sources.</p>
-                        </div>
-                    </a>
+                    <div class="card">
+                        <h2 class="card-title">Play (Music) - API &rarr;</h2>
+                        <p class="card-description">Play music from available sources.</p>
+                        <a href="api/playmusic?source=youtube&query=one+last+kiss" class="try-api-button">Try API</a>
+                    </div>
                 </div>
                 <section id="playmusic" class="api-section">
                     <h2>Play (Music) - API</h2>
-                    <p><code>GET api/playmusic?source=&lt;spotify&gt;&query=&lt;one last kiss&gt;</code></p>
+                    <p><code>GET /api/playmusic</code></p>
                     <div class="api-params">
                         <div class="param">
                             <span class="param-name"><code>source</code></span>
