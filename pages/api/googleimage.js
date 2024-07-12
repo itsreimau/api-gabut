@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     } = req.query;
 
     try {
-        if (!message) throw new Error("Parameter 'search' is required");
+        if (!search) throw new Error("Parameter 'search' is required");
 
         const result = await googleImage(search);
 
